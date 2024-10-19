@@ -1,0 +1,517 @@
+body {
+    background-color: #31363F;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*css de la barra*/
+.barranav {
+    width: auto;
+    height: 108px;
+    margin: auto;
+}
+
+/*carousel*/
+.carrousel {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    padding: 0 0.5% 0 0.5%;
+}
+
+/*contenido de la barra */
+.imagenlogo {
+    width: 380px;
+    height: 90px;
+    margin-top: -10px;
+    padding-left: 130px;
+}
+
+.tickets {
+    font-size: large;
+    padding-left: 200px;
+    font-weight: lighter;
+
+
+}
+
+.videos {
+    font-size: large;
+    font-weight: lighter;
+    padding-left: 40px;
+
+}
+
+.redes {
+    padding-left: 40px;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.contactos {
+    padding-left: 40px;
+    font-size: large;
+    font-weight: lighter;
+}
+
+/*todos los titulos*/
+.titulos {
+    color: aliceblue;
+    text-align: center;
+    padding: 5%;
+    font-size: 60px;
+}
+
+/*box de shows */
+
+.box {
+    padding: 10px;
+    background-color: grey;
+    color: #f0f8ff;
+    border-radius: 20px;
+    margin: 10px auto 0 auto;
+    width: 1000px;
+    height: 80px;
+}
+
+.numfech {
+    font-size: 34px;
+    color: aliceblue;
+    font-weight: 900;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 64px;
+    padding-right: 34px;
+    text-transform: uppercase;
+    list-style-type: none;
+
+}
+
+.lugfech {
+    font-size: 28px;
+    color: aliceblue;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    padding-right: 65px;
+
+}
+
+.lugfech2 {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    padding-right: 65px;
+}
+
+/*boton comprar entradas*/
+.letraboton {
+    text-align: center;
+
+}
+
+.botoncomp {
+    width: 160px;
+    height: 52px;
+    font-size: medium;
+    background-color: #d4d4d4;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10%;
+    border-color: #000000;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    padding: auto;
+    position: relative;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    transition: all 0.25s ease-out;
+
+}
+
+.botoncomp:hover {
+    transform: scale(1.05);
+}
+
+/*TITULOS*/
+.titulovid {
+    color: aliceblue;
+    text-align: center;
+    padding: 3%;
+    font-size: 50px;
+}
+
+/*VIDEOS YOUTUBE*/
+.row.row-cols-1.row-cols-md-2.g-4 {
+    background-color: #31363F;
+}
+
+.row.row-cols-1.row-cols-md-2.g-4:hover {
+    transform: scale(1);
+}
+
+.videoyou1:hover {
+    transform: scale(1.1);
+}
+
+iframe {
+    width: 500px;
+    height: 300px;
+}
+
+.videoyou1 {
+    margin: auto 350px;
+    padding-left: 90px;
+    transition: all 0.25s ease-out;
+
+}
+
+.videoyou2 {
+    margin: auto;
+
+    transition: all 0.25s ease-out;
+}
+
+.videoyou2:hover {
+    transform: scale(1.1);
+}
+
+.videoyou3 {
+    margin: auto 350px;
+    padding-left: 90px;
+    transition: all 0.25s ease-out;
+}
+
+.videoyou3:hover {
+    transform: scale(1.1);
+}
+
+.videoyou4 {
+    margin: auto;
+
+    transition: all 0.25s ease-out;
+}
+
+.videoyou4:hover {
+    transform: scale(1.1);
+}
+
+.form-floating.mb-3 {
+    width: 900px;
+    margin: auto;
+}
+
+.form-floating {
+    width: 900px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+
+.botonenviar {
+    width: 130px;
+    height: 50px;
+    font-size: medium;
+    background-color: #eef1f1;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10%;
+    border-color: #000000;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    padding: auto;
+    position: relative;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    transition: all 0.25s ease-out;
+}
+
+.botonenviar:hover {
+    transform: scale(1.05);
+}
+
+/*REDES SOCIALES*/
+
+.button {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.button a {
+    font-size: 28px;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #000000;
+    color: #eef1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all 0.25s ease-out;
+
+
+}
+
+.button a:hover {
+    transform: scale(1.05);
+}
+
+/* formulario*/
+.blockquote {
+    margin: auto;
+    color: aliceblue;
+    font-size: small;
+    text-align: center;
+
+}
+
+.blockquote-footer {
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.form-control {
+    border-color: #000000;
+
+}
+
+
+.text-end {
+    padding: 60px 0 0 0;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .barranav {
+        width: auto;
+        height: 108px;
+        margin: auto;
+    }
+
+    .carrousel {
+        width: 95%;
+        margin: auto;
+        position: relative;
+        padding: 0 0.5% 0 0.5%;
+    }
+
+
+
+    .imagenlogo {
+        width: 250px;
+        height: 90px;
+        margin-top: -10px;
+        padding-left: 20px;
+    }
+
+    .tickets {
+        font-size: large;
+        padding-left: 40px;
+        font-weight: lighter;
+    }
+
+    .videos {
+        font-size: large;
+        font-weight: lighter;
+        padding-left: 40px;
+    }
+
+    .redes {
+        padding-left: 40px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    .contactos {
+        padding-left: 40px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    .titulos {
+        color: aliceblue;
+        text-align: center;
+        padding: 5%;
+        font-size: 60px;
+    }
+
+    .box {
+        padding: 18px 24px;
+        background-color: grey;
+        color: #f0f8ff;
+        border-radius: 20px;
+        margin: 10px auto 0 auto;
+        width: 400px;
+        height: 150px;
+        flex-direction: column;
+        display: flex
+    }
+
+    .numfech {
+        font-size: 35px;
+        color: aliceblue;
+        font-weight: 500;
+        line-height: 24px;
+        /*text-align: center;*/
+        /*margin-right: 124px;
+        padding-right: 100px;*/
+        padding-bottom: 0;
+        margin: 0 auto;
+        text-transform: uppercase;
+        list-style-type: none;
+
+    }
+
+    .lugfech {
+        justify-content: center;
+        font-size: 30px;
+        color: aliceblue;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto;
+        padding:auto;
+      
+
+    }
+
+    .lugfech2 {
+        font-size: 15px;
+        color: aliceblue;
+        font-weight: 400;
+        text-align: center;
+        padding: auto;
+    }
+
+    /*boton comprar entradas*/
+    .letraboton {
+        text-align: center;
+
+    }
+
+    .botoncomp {
+        width: 350px;
+        height: 40px;
+        font-size: medium;
+        background-color: #d4d4d4;
+        color: black;
+        font-weight: bolder;
+        border-radius: 10%;
+        border-color: #000000;
+        text-align: center;
+        margin: 10px auto;
+        cursor: pointer;
+        padding: 20px auto;
+        position: relative;
+        box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+        -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.65);
+    }
+
+    .titulovid {
+        color: aliceblue;
+        text-align: center;
+        padding: 3%;
+        font-size: 30px;
+    }
+
+    .row.row-cols-1.row-cols-md-2.g-4 {
+        background-color: #31363F;
+    }
+
+    .row.row-cols-1.row-cols-md-2.g-4:hover {
+        transform: scale(1);
+    }
+
+    .videoyou1:hover {
+        transform: scale(1.1);
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    .videoyou1 {
+        margin: auto;
+        padding-left: 10%;
+    }
+
+    .videoyou2 {
+        margin: auto;
+        padding: 10%;
+    }
+
+    .videoyou3 {
+        margin: auto;
+        padding-left: 10%;
+    }
+
+    .videoyou4 {
+        margin: auto;
+        padding: 10%;
+    }
+
+
+    .form-floating.mb-3 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .form-floating {
+        width: 90%;
+        margin: auto;
+    }
+
+    .botonenviar {
+        width: 130px;
+        height: 60px;
+        font-size: medium;
+        background-color: #eef1f1;
+        color: black;
+        font-weight: bolder;
+        border-color: #000000;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .blockquote {
+        margin: auto;
+        color: aliceblue;
+        font-size: small;
+        text-align: center;
+
+    }
+
+    .blockquote-footer {
+        margin: auto;
+        color: aliceblue;
+        text-align: center;
+
+    }
+
+    .form-control {
+        border-color: #000000;
+
+    }
+
+    .text-end {
+        padding: 60px 0 0 0;
+    }
+
+
+
+}
