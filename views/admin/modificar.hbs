@@ -1,0 +1,26 @@
+<div class="contanier" style="margin:50px auto">
+    <div class="row">
+        <div class="col-6 affset-3">
+            <h4>Modificar los tickets</h4>
+            <form method="post" action="/admin/tickets/modificar">
+                <input type="hidden" value="{{tickets.id}}" name="id">
+                <div class="form-group.">
+                    <input type="text" placeholder="Fecha" value="{{tickets.Fecha}}" class="form-control" name="Fecha">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Lugar" class="farm-control" name="Lugar">{{tickets.Lugar}}</textarea>
+                </div>
+                <div Class="form-group">
+                    <textarea placeholder="Direccion" class=" form-control"
+                        name="Direccion"> {{tickets.Direccion}}</textarea>
+                </div>
+                <div Class="form-group">
+                    <textarea placeholder="Link" class=" form-control" name="Link"> {{tickets.Link}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"> Modificar</button>
+            </form>
+        </div>
+    </div>
+    {{#if error}}
+    <h5>{{message}}</h5>
+    {{/if}}

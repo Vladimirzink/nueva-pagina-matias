@@ -1,0 +1,26 @@
+<div class="container" style="margin:10% 10%; position:absolute; text-align:center;">
+    <div class="row">
+        <div class="col">
+            <form action="/admin/login" method="post">
+
+                <div class="form-floating mb-3" style="margin: auto; width:20%">
+                    <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp" name="usuario">
+                    <label for="usuario">usuario</label>
+                </div>
+                <div class="form-floating" style="margin: auto; width:20%">
+                    <input type="password" class="form-control" id="password" name="password">
+                    <label for="password">clave</label>
+                </div>
+                <div class="botonenviar" style="width: 7%;">
+                    <button type="submit" class="btn ">
+                        <h3 class="letraboton" style="font-size:smaller;  text-align:center; padding-top:23%">ENVIAR
+                        </h3>
+                    </button>
+                </div>
+            </form>
+             {{#if error}}
+              <p style="font-size: larger; color: red">usuario o clave incorrecta!</p>
+               {{/if}}
+        </div>
+    </div>
+</div>

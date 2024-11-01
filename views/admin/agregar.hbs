@@ -1,0 +1,27 @@
+<div class="container" style="margin: 100px auto;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4 style="color:aliceblue; font-size:x-large;">agregar una nueva fecha</h4>
+            
+            <form action="/admin/tickets/agregar" method="post">
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Fecha" name="Fecha"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Lugar" name="Lugar"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="Direccion" name="Direccion"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" placeholder="link" name="link"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+{{#if error}}
+<h5>{{message}}</h5>
+{{/if}}

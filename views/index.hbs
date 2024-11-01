@@ -1,0 +1,153 @@
+<div class="carrousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/public/images/mati foto 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/public/images/foto mati 2.JPG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/public/images/foto mati 3.JPG" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!--titulo -->
+<div class="fechastitulos">
+    <h1 class="titulos" id="entradas">TICKETS</h1>
+</div>
+
+<!--box de fechas-->
+
+{{#each tickets}}
+<div class="box" {{id}}>
+    <div class="row">
+        <div class="col">
+            <h1 class="numfech">{{Fecha}}</h1>
+        </div>
+        <div class="col">
+            <h2 class="lugfech">{{Lugar}} </h2>
+            <h3 class="lugfech2">{{Direccion}}</h3>
+        </div>
+        <div class="col">
+
+            <div class="botoncomp">
+                <a href="{{link}}" class="btn">
+                    <h3 class="letraboton">COMPRAR</h3>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{{/each}}
+<!--titulo videos -->
+<div class="titulos">
+    <h1 class="titulovid" id="videos"> VIDEOS</h1>
+</div>
+
+
+<div class="videitos">
+    <div class=" row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="videoyou1">
+                <iframe src="https://www.youtube.com/embed/_g1sEMIQ32c?si=91lHeyOb9ua5ZH8n" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="videoyou2">
+                <iframe src="https://www.youtube.com/embed/XDgR9qXOCxQ?si=-Xy7MD-gG2hKEYAp" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="videoyou3">
+                <iframe src="https://www.youtube.com/embed/zpcITYbXacs?si=1sfs4rhAOwACXZNa" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="videoyou4">
+                <iframe src="https://www.youtube.com/embed/9jm9fI_UbBY?si=oowkTf92-NYgQNKB" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<!--REDES SOCIALES-->
+<div class="titulos">
+    <h1 class="titulovid" id="redes"> REDES</h1>
+</div>
+<selection class="button">
+    <a href="https://www.instagram.com/matiacu_?igsh=dzJveGRhbzFybHhm" class="fa-brands fa-instagram"></a>
+    <a href="https://www.youtube.com/@matiacu_" class="fa-brands fa-youtube"></a>
+    <a href="https://www.facebook.com/theblackmaatt" class="fa-brands fa-facebook-f"></a>
+    <a href="https://www.tiktok.com/@matiacu_?lang=es&is_from_webapp=1&sender_device=mobile&sender_web_id=7430618236334507526"
+        class="fa-brands fa-tiktok"></a>
+
+</selection>
+
+
+
+
+<!--FORMULARIO-->
+<div class="titulos">
+    <h1 class="titulovid" id="contacto"> CONTACTO </h1>
+</div>
+<div class="formulariocompleto">
+
+    <form class="form-floating mb-3" action="/" method="post">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" placeholder="Nombre y Apellido" id="nombre" name="nombre">
+            <label for="nombre">Nombre y Apellido</label>
+        </div>
+
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
+            <label for="floatingInput">Mail</label>
+        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                name="mensaje"></textarea>
+            <label class="cuadromens" for="floatingTextarea2">Mensaje</label>
+        </div>
+
+        <div class="botonenviar">
+            <button type="submit" class="btn ">
+                <h3 class="letraboton">ENVIAR</h3>
+            </button>
+        </div>
+    </form>
+    {{message}}
+</div>
