@@ -25,6 +25,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
+
+
+app.use(fileUpload({
+  useTempFiles:true,
+  tempFileDir:'/temp/'
+  }))
+
+
 app.use(session({
   secret: '827ccb0eea8a706c4c34a16891f84e7b',
   resave: false,
@@ -43,6 +53,8 @@ secured = async (req, res, next) => {
     console.log(error);
   }
 }
+
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

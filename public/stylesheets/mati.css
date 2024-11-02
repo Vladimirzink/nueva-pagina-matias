@@ -1,4 +1,13 @@
 
+.scroll_section {
+scroll-margin-top: 60px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #31363F;
     width: auto;

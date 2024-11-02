@@ -1,11 +1,16 @@
 var express = require('express');
 var router = express.Router();
 var ticketsModel = require('./../../models/ticketsModel');
+var util = require('util');
+var cloudinary = require('cloudinary').v2;
+const uploader = util.promisify(cloudinary.uploader.upload);
 
 
 
 router.get('/', async function (req, res, next) {
+
     var tickets = await ticketsModel.getTickets();
+
     res.render('admin/tickets', {
         layout: 'admin/layout',
         persona: req.session.nombre,
@@ -27,10 +32,15 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
+     
+
         if (req.body.Fecha != "" && req.body.Lugar != "" && req.body.Direccion != "" && req.body.link != "") {
-            await ticketsModel.insertTickets(req.body);
+            await ticketsModel.insertTickets(req.body
+            );
+
             res.redirect('/admin/tickets')
         } else {
+
             res.render('admin/agregar', {
                 layout: 'admin/layout',
                 error: true, message: 'todos los campos son requeridos'
@@ -45,10 +55,14 @@ router.post('/agregar', async (req, res, next) => {
     }
 });
 
+
+
 router.get('/modificar/:id', async (req, res, next) => {
-    let id = req.params.id;
-    let tickets = await ticketsModel.getTicketsById(id);
-    res.render(' admin/modificar', {
+    var id = req.params.id;
+
+    var tickets = await ticketsModel.getTicketsById(id);
+
+    res.render('admin/modificar', {
         layout: 'admin/layout',
         tickets
     });
@@ -57,11 +71,12 @@ router.get('/modificar/:id', async (req, res, next) => {
 router.post('/modificar', async (req, res, next) => {
     try {
         let obj = {
-            Fecha: req.body.fecha,
+            Fecha: req.body.Fecha,
             Lugar: req.body.Lugar,
             Direccion: req.body.Direccion,
             link: req.body.link
         }
+        console.log(obj)
         await ticketsModel.modificarTicketsById(obj, req.body.id);
         res.redirect('/admin/tickets');
     }
@@ -69,7 +84,8 @@ router.post('/modificar', async (req, res, next) => {
         console.log(error)
         res.render('admin/modificar', {
             layout: 'admin/layout',
-            error: true, message: 'no se modifico la novedad'
+            error: true, 
+            message: 'no se modifico la novedad'
         })
     }
 })

@@ -1,23 +1,27 @@
-<div class="contanier" style="margin:50px auto">
-    <div class="row">
+<div class="contanier">
+    <div class="row" style="width: 90%; text-align:center; margin:auto;">
         <div class="col-6 affset-3">
-            <h4>Modificar los tickets</h4>
+            <h4 style="color: aliceblue; font-size:xx-large">Modificar los tickets</h4>
             <form method="post" action="/admin/tickets/modificar">
                 <input type="hidden" value="{{tickets.id}}" name="id">
-                <div class="form-group.">
-                    <input type="text" placeholder="Fecha" value="{{tickets.Fecha}}" class="form-control" name="Fecha">
-                </div>
                 <div class="form-group">
-                    <textarea placeholder="Lugar" class="farm-control" name="Lugar">{{tickets.Lugar}}</textarea>
-                </div>
-                <div Class="form-group">
-                    <textarea placeholder="Direccion" class=" form-control"
-                        name="Direccion"> {{tickets.Direccion}}</textarea>
-                </div>
-                <div Class="form-group">
-                    <textarea placeholder="Link" class=" form-control" name="Link"> {{tickets.Link}}</textarea>
-                </div>
-                <button type="submit" class="btn btn-primary"> Modificar</button>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Fecha"
+                            name="Fecha">{{tickets.Fecha}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Lugar"
+                            name="Lugar">{{tickets.Lugar}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="Direccion"
+                            name="Direccion">{{tickets.Direccion}}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control" placeholder="link"
+                            name="link">{{tickets.link}}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"> Modificar</button>
             </form>
         </div>
     </div>
